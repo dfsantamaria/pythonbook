@@ -1,0 +1,11 @@
+ID, Titolo, Artista, Anno, Museo, Città
+1, "Mona Lisa", "Leonardo da Vinci", 1503, "Museo del Louvre", "Parigi"
+2, "La notte stellata", "Vincent van Gogh", 1889, "Museum of Modern Art", "New York"
+3, "Il bacio", "Gustav Klimt", 1907, "Österreichische Galerie Belvedere", "Vienna"
+4, "La nascita di Venere", "Sandro Botticelli", 1486, "Galleria degli Uffizi", "Firenze"
+5, "Guernica", "Pablo Picasso", 1937, "Museo Nacional Centro de Arte Reina Sofía", "Madrid"
+6, "La Creazione di Adamo", "Michelangelo", 1512, "Cappella Sistina", "Città del Vaticano"
+7, "Il Pensatore", "Auguste Rodin", 1902, "Musée Rodin", "Parigi"
+8, "La persistenza della memoria", "Salvador Dalí", 1931, "Museum of Modern Art", "New York"
+9, "La scuola di Atene", "Raffaello", 1511, "Stanze di Raffaello", "Città del Vaticano"
+10, "Ragazza con l'orecchino di perla", "Johannes Vermeer", 1665, "Mauritshuis", "L'Aia"

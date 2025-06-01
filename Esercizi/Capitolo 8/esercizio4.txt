@@ -1,0 +1,22 @@
+building,year_built,city,country,architect_designer,cost
+Antilla,2010,Mumbai,India,Perkins & Will,2000000000
+Bank of China Tower,1990,Hong Kong,Hong Kong,I. M. Pei,1000000000
+Bellagio,1998,Las Vegas,United States of America,DeRuyter Butler,1600000000
+Burj Khalifa,2010,Dubai,United Arab Emirates,Adrian Smith,1500000000
+City of Dreams (casino),2009,Macau,Macau,Arquitectonica,2400000000
+ECB Headquarters,2013,Frankfurt,Germany,Coop Himmelb(l)au,1570000000
+Emirates Palace,2005,Abu Dhabi,United Arab Emirates,John Elliott,3000000000
+Marina Bay Sands,2010,Singapore,Singapore,Moshe Safdie,5500000000
+One World Trade Center,2012,New York,United States of America,David Childs,3800000000
+Petronas Twin Towers,1999,Kuala Lumpur,Malaysia,César Pelli,1160000000
+Princess Tower,2012,Dubai,United Arab Emirates,Adnan Saffarini,2170000000
+Resorts World Sentosa,2010,Singapore,Singapore,Michael Graves,4930000000
+Taipei 101,2004,Taipei,Taiwan,C.Y. Lee & Partners,1800000000
+The Cosmopolitan,2010,Las Vegas,United States of America,Friedmutter Group,3900000000
+The Palazzo,2007,Las Vegas,United States of America,"HKS Inc.",1800000000
+Triple One,2016,Yongsan,South Korea,Renzo Piano,1270000000
+Venetian Macau,2005,Macau,Macau,Aedas,2400000000
+Wembley Stadium,2006,London,UK,Foster and Partners,1500000000
+World Finance Center,2008,Shanghai,China,Kohn Pedersen Fox,1200000000
+Wynn Resort,2005,Las Vegas,United States of America,Butler/Ashworth Architects,2700000000
+Yankee Stadium,2009,New York,United States of America,Populous,1500000000

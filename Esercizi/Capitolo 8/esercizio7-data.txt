@@ -1,0 +1,4 @@
+Nome,Tipologia,Tempo,Ingredienti Primari,Ingredienti Secondari,Calorie
+Carbonara,Primo,25,Spaghetti-Uova-Guangiale,Pepe-Formaggio-Sale,710 
+Torta Tenerina,Dolce,45,Cioccolato-Uova-Farina-Burro,Zucchero-Zucchero a velo,395
+Salmone,Secondo,30,Salmone-Pane,Prezzemolo-Timo-Limone-Pepe-Olio-Sale,654

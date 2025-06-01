@@ -1,0 +1,12 @@
+videogame,year,developer,platform_s,estimated_total_costs_text,estimated_development_costs
+APB: All Points Bulletin,2010,Realtime Worlds,PC,50000000,50000000
+Call of Duty: Elite,2011,Beachhead Studios,PC,50000000,50000000
+Crysis 3,2013,Crytek Frankfurt, PS3-Xbox 360- PC,66000000,66000000
+DC Universe Online,2012,Sony Online Entertainment, PC-PS3-PS4,50000000,50000000
+Deadpool,2013,High Moon Studios, PS3-Xbox 360-PC,100000000, 100000000
+Defiance,2013,Trion Worlds, PC-PS3-Xbox 360,80000000,80000000
+Destiny,2014,Bungie, PS3-PS4-Xbox 360- Xbox One,500000000, 500000000
+Disney Infinity,2013,Avalanche Software, PS3 - Xbox 360- Wii U- 3DS - PC,100000000, 500000000
+Final Fantasy VII,1997,Square, PS-PC,145000000,45000000
+Gran Turismo 5,2010,Polyphony Digital,PS3,60000000,60000000
+Marathon,2024,Bungie, PS3-PS4-Xbox 360- Xbox One,500000000, 500000000
