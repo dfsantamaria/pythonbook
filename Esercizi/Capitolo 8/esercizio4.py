@@ -3,8 +3,8 @@ from urllib import request
 def esercizio1(url):
     lista = []
     chiavi = []
-    req = request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    file = request.urlopen(req)
+    resp = request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    file = request.urlopen(resp)
     for pos,elemento in enumerate(file):
         if pos == 0:   #leggere l'intestazione
             chiavi = elemento.decode().strip().split(",")
