@@ -2,8 +2,8 @@ from urllib import request
 
 def esercizio1(url):
     result =[]
-    resp = request.Request(url, headers={"User-Agent": "Mozilla/5.0"})    
-    file = request.urlopen(resp)
+    req = request.Request(url, headers={"User-Agent": "Mozilla/5.0"})    
+    file = request.urlopen(req)
     header=[]
     for pos,line in enumerate(file):
         if pos==0:
