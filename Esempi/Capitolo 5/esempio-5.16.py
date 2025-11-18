@@ -1,5 +1,3 @@
-# Il metodo replace di str
-
-saluto = "Ciao Daniele"
-nuovo_saluto = saluto.replace("Daniele", "Luca")
-print(nuovo_saluto) #restituisce "Ciao Luca"
+frase = "Imparo ad utilizzare Python"
+if frase.find("Python")  >= 0:
+  print("Trovato") 

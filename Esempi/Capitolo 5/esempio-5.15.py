@@ -1,5 +1,3 @@
-# Il metodo count di str
-
-testo = "abcabcabc"
-occorrenze = testo.count("abc")
-print(occorrenze)  # restituisce 3
+frase = "Imparo ad utilizzare Python"
+if frase.find("Python")  >= 0:
+  print("Trovato") 

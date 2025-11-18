@@ -1,6 +1,6 @@
-# Uso di f-string
+# Il metodo isdecimal di str
 
-nome = "Mario"
-eta = 25
-frase = f"Mi chiamo {nome} e ho {eta} anni"
-print(frase)  # Restituisce "Mi chiamo Mario e ho 25 anni"
+stringa = "12"
+stringa1 = "12.0"
+print(stringa.isdecimal())  # Stampa True
+print(stringa1.isdecimal())  # Stampa False a causa del simbolo .

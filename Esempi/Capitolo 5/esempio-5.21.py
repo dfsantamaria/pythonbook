@@ -1,6 +1,5 @@
-# Il metodo isalnum di str
+# Il metodo strip di str
 
-stringa = "ProgrammazionePython2"
-stringa1 = "Programmzione Python 2"
-print(stringa.isalnum())  # Stampa True
-print(stringa1.isalnum())  # Stampa False a causa degli spazi
+stringa_con_spazi = "   testo   "
+stringa_finale = stringa_con_spazi.strip()
+print(stringa_finale)  # restituisce "testo"

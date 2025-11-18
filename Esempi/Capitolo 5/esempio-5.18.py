@@ -1,4 +1,5 @@
-# Il metodo capitalize di str
+# Il metodo replace di str
 
-parola = "pytHoN"
-print(parola.capitalize())  # restituisce "Python"
+saluto = "Ciao Daniele"
+nuovo_saluto = saluto.replace("Daniele", "Luca")
+print(nuovo_saluto) #restituisce "Ciao Luca"

@@ -1,5 +1,5 @@
-# I metodi upper e lower di str
+# Il metodo count di str
 
-parola = "Python"
-print(parola.upper())  # restituisce "PYTHON"
-print(parola.lower())  # restituisce "python"
+testo = "abcabcabc"
+occorrenze = testo.count("abc")
+print(occorrenze)  # restituisce 3

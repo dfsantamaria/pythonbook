@@ -1,6 +1,6 @@
-# Il metodo isdecimal di str
+# Il metodo isalnum di str
 
-stringa = "12"
-stringa1 = "12.0"
-print(stringa.isdecimal())  # Stampa True
-print(stringa1.isdecimal())  # Stampa False a causa del simbolo .
+stringa = "ProgrammazionePython2"
+stringa1 = "Programmzione Python 2"
+print(stringa.isalnum())  # Stampa True
+print(stringa1.isalnum())  # Stampa False a causa degli spazi

@@ -1,5 +1,4 @@
-# Il metodo split di str
+# Il metodo capitalize di str
 
-dati = "Mario,Rossi,45,Milano,medico"
-lista = dati.split(",")
-print(lista)
+parola = "pytHoN"
+print(parola.capitalize())  # restituisce "Python"

@@ -1,5 +1,5 @@
 # Uso di for con in
 
-stringa = "una stringa"
+stringa = "Ciao!"
 for carattere in stringa:
     print(carattere)

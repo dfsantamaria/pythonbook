@@ -1,6 +1,5 @@
-# Il metodo isaplha di str
+# Il metodo split di str
 
-stringa = "ProgrammazionePython"
-stringa1 = "Programmzione Python 2"
-print(stringa.isalpha())  # Stampa True
-print(stringa1.isalpha())  # Stampa False a causa degli spazi e del numero 2
+dati = "Mario,Rossi,45,Milano,medico"
+lista = dati.split(",")
+print(lista)

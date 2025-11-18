@@ -1,5 +1,5 @@
-# Il metodo strip di str
+# I metodi upper e lower di str
 
-stringa_con_spazi = "   testo   "
-stringa_finale = stringa_con_spazi.strip()
-print(stringa_finale)  # restituisce "testo"
+parola = "Python"
+print(parola.upper())  # restituisce "PYTHON"
+print(parola.lower())  # restituisce "python"

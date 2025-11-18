@@ -1,6 +1,6 @@
-# I metodi isupper e islower di str
+# Il metodo isaplha di str
 
-stringa = "Python"
-stringa1 = "python"
-print(stringa.isupper())  # Stampa True
-print(stringa1.islower())  # Stampa True
+stringa = "ProgrammazionePython"
+stringa1 = "Programmzione Python 2"
+print(stringa.isalpha())  # Stampa True
+print(stringa1.isalpha())  # Stampa False a causa degli spazi e del numero 2
