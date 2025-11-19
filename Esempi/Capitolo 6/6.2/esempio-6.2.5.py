@@ -2,8 +2,8 @@
 
 from urllib import request
 
-url = "https://www.google.com/"
+url = "https://www.unict.it/"
 risposta = request.urlopen(url)
 for riga in risposta:
-    print(riga.decode("latin-1"))
+    print(riga.decode())
 risposta.close()
