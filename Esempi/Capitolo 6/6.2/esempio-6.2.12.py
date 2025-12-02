@@ -2,9 +2,10 @@
 
 from urllib import request
 
-url = "https://www.google.com/"
+url = "https://www.unict.it/"
 risposta = request.urlopen(url)
 contenuto_binario = risposta.read()
-contenuto = contenuto_binario.decode("utf-8")
+risposta.close()
+contenuto = contenuto_binario.decode()
 with  open("pagina.txt", "w") as f:
     f.write(contenuto)
