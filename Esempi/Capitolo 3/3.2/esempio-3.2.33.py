@@ -1,4 +1,4 @@
-# Uso dei metodi di tipo
+# Accesso al tipo di un valore
 
-stringa = "Ciao!"
-stringa = stringa.upper()
+contatore = 0
+print(type(contatore))
