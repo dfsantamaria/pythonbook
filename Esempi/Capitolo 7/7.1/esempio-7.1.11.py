@@ -1,9 +1,5 @@
-# Modifica di una lista attraverso uan funzione
+# Esempio di ordinamento di una lista tramite sort()
 
-def modifica_lista(lista: list, pos: int, val):
-    lista[pos] = val
-#fine definizione funzione
-
-lista = [3, 5, "test"]
-modifica_lista(lista, 2, 90)
-print(lista)
+lista = [7, 4, 3, 0]
+lista.sort(reverse=True)  # Ordina i valori della lista in modo decrescente
+print(lista) 

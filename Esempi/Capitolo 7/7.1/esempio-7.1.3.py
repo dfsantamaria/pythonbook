@@ -1,4 +1,9 @@
-# Modifica di un elemento all'interno di una lista
+lista = [3, 5, 10, -1, 5, -10, 25]
+for elem in lista:
+    print(elem)
 
-lista[0] = 4
-print(lista)  # Restituisce [4, "ciao", 4.0]
+for pos, elem in enumerate(lista):
+    print(pos, elem)
+
+for pos in range(0, len(lista)):
+    print(pos, lista[pos])
