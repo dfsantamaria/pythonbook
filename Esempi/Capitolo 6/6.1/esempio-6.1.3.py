@@ -1,5 +1,4 @@
-# Definizione di una funzione non produttiva 
+def stampa(mia_stringa, ripetizione):
+   print(mia_stringa*ripetizione)
 
-def pulisci_stringa(mia_stringa):
-    mia_stringa = mia_stringa.replace(' ', '')
-    mia_stringa = mia_stringa.capitalize()
+stampa("messaggio", 10)

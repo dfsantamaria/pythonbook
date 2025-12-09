@@ -1,4 +1,4 @@
-# Esempio dell'uso di tuple
+# Esempio di concatenazione di due tuple
 
-lista = [2, 4]
-tupla = tuple(lista)
+tupla = (2, 4, 10)
+tupla_1 = tupla + (100,)

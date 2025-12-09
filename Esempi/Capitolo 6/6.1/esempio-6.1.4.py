@@ -1,5 +1,6 @@
-# Chiamata di funzione
+def stampa(mia_stringa, ripetizione):
+   print(mia_stringa*ripetizione)
 
-nome = "da ni e le"
-nome = pulisci_stringa(nome)
-print(nome)
+stampa(mia_stringa="messaggio", ripetizione=10) 
+stampa(ripetizione=10, mia_stringa="messaggio") 
+stampa("messaggio", ripetizione=10)

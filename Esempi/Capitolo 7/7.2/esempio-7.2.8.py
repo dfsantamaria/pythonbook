@@ -1,4 +1,6 @@
-# Esempio di concatenazione di due tuple
+# Esempio di unpacking di una tupla come argomento di una funzione
 
-tupla = (2, 4, 10)
-tupla_1 = tupla + (100,)
+def somma(a, b, c):
+    return a + b + c
+tupla = (1, 2, 3)
+print(somma(*tupla))  # equivale a somma(1, 2, 3)

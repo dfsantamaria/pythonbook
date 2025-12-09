@@ -1,6 +1,8 @@
-# Esempio di unpacking di una tupla come argomento di una funzione
+def stampa_tutti(messaggio, *tupla, altro_messaggio):
+   print(messaggio)
+   for elem in tupla:
+       print(elem)
+   print(altro_messaggio)
+#Fine della definizione della funzione
 
-def somma(a, b, c):
-    return a + b + c
-tupla = (1, 2, 3)
-print(somma(*tupla))  # equivale a somma(1, 2, 3)
+stampa_tutti("Elenco:", 1,2,3,4,5, altro_messaggio="Fine elenco")
