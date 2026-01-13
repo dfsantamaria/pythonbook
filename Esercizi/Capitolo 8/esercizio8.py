@@ -1,82 +1,87 @@
 from urllib import request
 
-def esercizio_1(url):
-    lista = []
-    chiavi = []
-    req = request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    file = request.urlopen(req)
-    for pos,elemento in enumerate(file):
-        elemento=elemento.decode().strip()
-        if pos == 0:   #leggere l'intestazione
-            chiavi = elemento.split(",")
-        else:
-             dizionario = {}
-             for pos_chiavi, linea in enumerate(elemento.split(",")):
-                 if chiavi[pos_chiavi] in ["Publication Year", "Earnings (EUR)"]:
-                    dizionario.update({chiavi[pos_chiavi]:int(linea)})
-                 elif chiavi[pos_chiavi] == "Rating":
-                    dizionario.update({chiavi[pos_chiavi]:float(linea)})
-                 else:
-                     dizionario.update({chiavi[pos_chiavi]:linea})
-             lista.append(dizionario)
-    return lista
+#esercizio 1
+def esercizio1(url):
+    risultato=[]
+    chiavi=[]
+    with request.urlopen(url) as oggetto:
+        for pos, riga in enumerate(oggetto):
+            if pos==0:
+                chiavi=riga.strip().decode().split(",")
+                for posC, chiave in enumerate (chiavi):
+                    chiavi[posC]= chiave.strip()
+            else:
+                valori=riga.strip().decode().split(",")
+                diz={}
+                for posV, valore in enumerate (valori):
+                    valori[posV]=valore.replace('"','').strip()
+                    if chiavi[posV] in ["Anno", "ID"]:
+                        valori[posV]= int(valori[posV])
+                    diz.update({chiavi[posV]: valori[posV]})
+                risultato.append(diz)
+        return risultato
 
 
-def esercizio_2(lista):
-    films = []
-    for elem in lista:
-        if elem["Rating"] > 9.0:
-            films.append(elem["Title"])
-    return films
+#esercizio 2
+def esercizio2 (lista:list)-> list:
+    risultato=[]
+    for diz in lista:
+        if diz["Città"] == "Parigi":
+            risultato.append(diz["ID"])
+    return risultato
 
 
-def esercizio_3(lista, anno):
-    films = []
-    for elem in lista:
-        if elem["Publication Year"] == anno:
-            films.append((elem["Title"], elem["Director"]))
-    return  films
+
+#esercizio 3
+def esercizio3 (nome:str, lista:list)-> list:
+    risultato=[]
+    for diz in lista:
+        if nome in diz["Titolo"]:
+            risultato.append(diz["Titolo"])
+    return risultato
 
 
-def verifica_anno(lista, anno):
-    for pos, elem in enumerate(lista):
-        if elem[0] == anno:
+
+#esercizio 4
+def contiene_tupla_citta(lista:list, stringa:str) ->int:
+    for pos, elemento in enumerate(lista):
+        if elemento[0] == stringa:
             return pos
     return -1
 
-def esercizio_4(lista):
-    films = []
-    for elem in lista:
-        pos = verifica_anno(films, elem["Publication Year"] )
-        if pos >= 0:
-           films[pos] = (films[pos][0], films[pos][1]+elem["Earnings (EUR)"], films[pos][2] + [elem["Title"]])
-        else:
-            films.append((elem["Publication Year"], elem["Earnings (EUR)"], [elem["Title"]]))
-    return films
+
+def esercizio4 (lista:list) -> list:
+    risultato=[]
+    for diz in lista: #seleziono città e la appendo alla lista delle città.
+       if (pos := contiene_tupla_citta(risultato, diz["Città"]) >= 0 ):
+           risultato[pos] = (risultato[pos][0],risultato[pos][1]+[diz["Titolo"]])
+       else:
+           risultato.append((diz["Città"], [diz["Titolo"]]))
+    return risultato
 
 
-def esercizio_5(lista, nome):
-    file = open(nome, "w")
-    for elem in lista:
-        file.write(str(elem[0])+", "+str(elem[1])+":")
-        for pos, film in enumerate(elem[2]):
-            file.write(film)
-            if pos == len(elem[2]) - 1:
-               file.write(";")
-            else:
-                file.write(",")
-        file.write("\n")
-    file.close()
+
+#esercizio 5
+def esercizio5(lista:list,nome:str):
+    with open(nome,"w", encoding="utf-8") as file:
+        for tupla in lista:
+            file.write(f"{tupla[0]}: ")
+            titoli= tupla[1]
+            for pos, titolo in enumerate (titoli):
+                file.write(f"{titolo}")
+                if pos < len(titoli)-1:
+                    file.write(", ")
+                else:
+                    file.write(";\n")
 
 
-data = esercizio_1("https://pastebin.com/raw/NkMtkZEZ")
-print(data)
 
-print(esercizio_2(data))
-
-print(esercizio_3(data, 1994))
-
-films = esercizio_4(data)
-print(films)
-
-esercizio_5(films, "esame.txt")
+lista_diz= esercizio1("https://pastebin.com/raw/pNEu1V0K")
+print(lista_diz)
+opere_Parigi=esercizio2(lista_diz)
+print(opere_Parigi)
+titoli_filtrati=esercizio3("La", lista_diz)
+print(titoli_filtrati)
+tuple_citta_opere=esercizio4(lista_diz)
+print(tuple_citta_opere)
+esercizio5(tuple_citta_opere, "città e opere.txt")
