@@ -1,11 +1,11 @@
-Title,Genre,Director,Rating,Publication Year,Earnings (EUR)
-The Shawshank Redemption,Drama,Frank Darabont,9.3,1994,58000000
-The Godfather,Crime,Francis Ford Coppola,9.2,1972,245000000
-The Dark Knight,Action,Christopher Nolan,9.0,2008,1005000000
-Pulp Fiction,Crime,Quentin Tarantino,8.9,1994,213900000
-Forrest Gump,Drama,Robert Zemeckis,8.8,1994,678200000
-Inception,Sci-Fi,Christopher Nolan,8.8,2010,836800000
-Fight Club,Drama,David Fincher,8.8,1999,100900000
-The Matrix,Sci-Fi,Lana Wachowski,8.7,1999,463500000
-Goodfellas,Crime,Martin Scorsese,8.7,1990,47000000
-The Empire Strikes Back,Sci-Fi,Irvin Kershner,8.7,1980,538400000
+ID, Titolo, Artista, Anno, Museo, Città
+1, "Mona Lisa", "Leonardo da Vinci", 1503, "Museo del Louvre", "Parigi"
+2, "La notte stellata", "Vincent van Gogh", 1889, "Museum of Modern Art", "New York"
+3, "Il bacio", "Gustav Klimt", 1907, "Österreichische Galerie Belvedere", "Vienna"
+4, "La nascita di Venere", "Sandro Botticelli", 1486, "Galleria degli Uffizi", "Firenze"
+5, "Guernica", "Pablo Picasso", 1937, "Museo Nacional Centro de Arte Reina Sofía", "Madrid"
+6, "La Creazione di Adamo", "Michelangelo", 1512, "Cappella Sistina", "Città del Vaticano"
+7, "Il Pensatore", "Auguste Rodin", 1902, "Musée Rodin", "Parigi"
+8, "La persistenza della memoria", "Salvador Dalí", 1931, "Museum of Modern Art", "New York"
+9, "La scuola di Atene", "Raffaello", 1511, "Stanze di Raffaello", "Città del Vaticano"
+10, "Ragazza con l'orecchino di perla", "Johannes Vermeer", 1665, "Mauritshuis", "L'Aia"
