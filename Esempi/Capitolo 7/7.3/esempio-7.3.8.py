@@ -1,6 +1,6 @@
 # Esempio di unpacking chiave-valore di un dizionario
 
-def saluta(Cognome, Nome, Matricola):
+def saluta(Nome, Cognome, Matricola):
     print(f"{Nome}, {Cognome}, {Matricola}!")
 
 
