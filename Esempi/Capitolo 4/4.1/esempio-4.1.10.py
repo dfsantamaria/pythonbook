@@ -7,6 +7,6 @@ if isinstance(x,int):
         print("x è un numero intero negativo")
     else:
         print("x è pari a zero!")
- else:
+else:
      print("x non è di tipo 'int'")
 print("Programma terminato")
